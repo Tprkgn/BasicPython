@@ -1,15 +1,6 @@
-#from turtle import *
-#speed(500)
-#color('cyan')
-#bgcolor('black')
-#b = 200
-#while b >0:
-#    left(b)
-#    forward(b * 3)
-#    b=b-1
 import turtle
-
-turtle.bgcolor("black")
+import time
+turtle.bgcolor("white")
 turtle.pensize(2)
 def curve():
     for i in range(200):
@@ -17,7 +8,7 @@ def curve():
         turtle.forward(1)
 
 turtle.speed(0)
-turtle.color("red", "pink")
+turtle.color("red", "red")
 
 turtle.begin_fill()
 turtle.left(140)
@@ -28,4 +19,10 @@ turtle.left(120)
 curve()
 turtle.forward(111.65)
 turtle.end_fill()
+turtle.color('black')
+turtle.penup()
+turtle.left(230)
+turtle.forward(80)
+turtle.write("İpek", move=False, align="center", font=("Arial", 30, "normal")) 
 turtle.hideturtle()
+time.sleep(10)
